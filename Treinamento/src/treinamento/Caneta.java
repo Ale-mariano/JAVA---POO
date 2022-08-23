@@ -7,34 +7,43 @@ package treinamento;
 public class Caneta {
 
 // ATRIBUTOS
-    public String modelo;
-    public String cor;
+    private String modelo;
+    private String cor;
     private float ponta;
-    protected int carga;
-    protected boolean tampada;
-        
-      public void status(){   //metodo
-      System.out.println("Modelo: " + this.modelo); //this é o nome do objeto que chamou
-      System.out.println("Uma caneta " + this.cor);
-      System.out.println("Ponta: " + this.ponta);
-      System.out.println("Carga: " + this.carga);
-      System.out.println("Esta tampada? " + this.tampada);
+    private boolean tampada;
+       
+    public Caneta(String m, String c, float p){ // Metodo construtor
+       this.modelo = m;
+       this.cor = c;
+       this.SetPonta(p);
     }
-            
-   // METODOS
-    
-    public void rabiscar(){
-        if (this.tampada == true){
-         System.out.println("ERRO! Não posso rabiscar");
-        }
-       else
-         System.out.println("Estou rabiscando");   
-}
-    protected void tampar(){
-      this.tampada = true;  
-    }
-    protected void destampar() {
-      this.tampada = false;
+      public String getModelo() {
+          return this.modelo;
+ }
+      public void SetModelo(String m) {
+          this.modelo = m;
+      }
+      public float getPonta() {
+          return this.ponta;
+      }
+      public void SetPonta(float p) {
+          this.ponta = p;
+      }
       
-}
+      public void tampar(){
+              this.tampada = true;
+         
+      }
+      public void destampar() {
+            this.tampada = false;
+              
+          }
+      public void staus() {
+          System.out.println("SOBRE A CANETA:");
+          System.out.println("Modelo: " + this.getModelo());
+          System.out.println("Ponta: " + this.getPonta());
+          System.out.println("Cor: " + this.cor);
+          System.out.println("Tampada: " + this.tampada);
+      }
+     
 }
