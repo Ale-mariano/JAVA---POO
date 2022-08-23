@@ -7,13 +7,13 @@ package treinamento;
 public class Caneta {
 
 // ATRIBUTOS
-    String modelo;
-    String cor;
-    float ponta;
-    int carga;
-    boolean tampada;
+    public String modelo;
+    public String cor;
+    private float ponta;
+    protected int carga;
+    protected boolean tampada;
         
-      void status(){   //metodo
+      public void status(){   //metodo
       System.out.println("Modelo: " + this.modelo); //this é o nome do objeto que chamou
       System.out.println("Uma caneta " + this.cor);
       System.out.println("Ponta: " + this.ponta);
@@ -23,17 +23,17 @@ public class Caneta {
             
    // METODOS
     
-    void rabiscar(){
+    public void rabiscar(){
         if (this.tampada == true){
          System.out.println("ERRO! Não posso rabiscar");
         }
        else
          System.out.println("Estou rabiscando");   
 }
-    void tampar(){
+    protected void tampar(){
       this.tampada = true;  
     }
-    void destampar() {
+    protected void destampar() {
       this.tampada = false;
       
 }
