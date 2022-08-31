@@ -1,4 +1,4 @@
-package treinamento;
+package treinamento01;
 public class Caneta {
 
 // ATRIBUTOS
