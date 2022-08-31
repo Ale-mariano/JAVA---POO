@@ -1,6 +1,5 @@
-
-package treinamento2;
-public class Treinamento2 {
+package treinamento02;
+public class Treinamento02 {
     public static void main(String[] args) {
        ContaBanco p1 = new ContaBanco();
        p1.setnumConta(1111);

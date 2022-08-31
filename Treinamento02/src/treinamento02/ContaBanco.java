@@ -1,4 +1,4 @@
-package treinamento2;
+package treinamento02;
 
 public class ContaBanco {
     //Atributos
