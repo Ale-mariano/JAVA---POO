@@ -1,4 +1,4 @@
-package ultraemojicombat;
+package treinamento04;
 public class Lutador {
     private String nome;
     private String nacionalidade;
