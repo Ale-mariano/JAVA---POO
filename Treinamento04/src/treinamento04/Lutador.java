@@ -13,11 +13,11 @@ public class Lutador {
         System.out.println("----------------------------------------------------------");
         System.out.println("CHEGOU A HORA!! + apresentamos o lutador " + this.getNome());
         System.out.println("Diretamente de " + this.getNacionalidade());
-        System.out.println("Com " + this.getIdade()+ "anos e " + this.getAltura());
+        System.out.println("Com " + this.getIdade()+ " anos e " + this.getAltura());
         System.out.println("Pesando " + this.getPeso() + "Kg");
-        System.out.println("Vitorias " + this.getVitorias()+ "vitorias ");
-        System.out.println("Derrotas " + this.getDerrotas()+ "derrotas ");
-        System.out.println("Empates " + this.getEmpates()+ "empates ");
+        System.out.println("Vitorias " + this.getVitorias()+ " vitorias ");
+        System.out.println("Derrotas " + this.getDerrotas()+ " derrotas ");
+        System.out.println("Empates " + this.getEmpates()+ " empates ");
     }
     public void status(){
         System.out.println(this.getNome()+ " é um peso " + this.getCategoria());
