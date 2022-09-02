@@ -52,10 +52,10 @@ public class Luta {
                   this.desafiante.ganharLutar();
                   this.desafiado.perderLuta();                 
             }
-            System.out.println("==============================");
+                System.out.println("==============================");
           
-      } else{
-          System.out.println("A luta não pode acontecer");
+        } else{
+                System.out.println("A luta não pode acontecer");
       }
        
    }
