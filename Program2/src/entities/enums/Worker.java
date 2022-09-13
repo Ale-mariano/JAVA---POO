@@ -1,6 +1,6 @@
 package entities.enums;
 
-import entities.Departament;
+import entities.Department;
 import entities.HourContract;
 import entities.enums.WorkerLevel;
 import java.util.ArrayList;
@@ -12,14 +12,14 @@ public class Worker {
     private WorkerLevel level;
     private Double baseSalary;
     
-    private Departament departament;
+    private Department departament;
     private List<HourContract> contracts = new ArrayList<>(); //composição
     
     public Worker(){
         
     }
 
-    public Worker(String name, WorkerLevel level, Double baseSalary, Departament departament) {
+    public Worker(String name, WorkerLevel level, Double baseSalary, Department departament) {
         this.name = name;
         this.level = level;
         this.baseSalary = baseSalary;
@@ -50,11 +50,11 @@ public class Worker {
         this.baseSalary = baseSalary;
     }
 
-    public Departament getDepartament() {
+    public Department getDepartament() {
         return departament;
     }
 
-    public void setDepartament(Departament departament) {
+    public void setDepartament(Department departament) {
         this.departament = departament;
     }
 
@@ -87,6 +87,12 @@ public class Worker {
     public void addContract(HourContract contract) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
+
+    public Object getDepartment() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
- 
+
+   
+    }
+     
 

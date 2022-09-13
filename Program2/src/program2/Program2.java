@@ -1,6 +1,6 @@
 package program2;
 
-import entities.Departament;
+import entities.Department;
 import entities.HourContract;
 import entities.enums.Worker;
 import entities.enums.WorkerLevel;
@@ -28,7 +28,7 @@ public class Program2 {
      System.out.print("Base salary: ");
      double baseSalary = sc.nextDouble();
      
-     Worker worker = new Worker(workerName, WorkerLevel.valueOf(workerLevel), baseSalary, new Departament(DepartamentName));
+     Worker worker = new Worker(workerName, WorkerLevel.valueOf(workerLevel), baseSalary, new Department(DepartamentName));
      
      System.out.print("How many contracts to this worker?: ");
      int n = sc.nextInt();
